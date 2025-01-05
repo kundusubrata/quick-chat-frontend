@@ -15,9 +15,9 @@ This repository contains the frontend for a real-time chat application. The appl
 
 ## Screenshots
 
-![quick-chat homepage](/client/public/images/quick-chat-homepage.png)
-![quick-chat dashboard](/client/public/images/quick-chat-dashboard.png)
-![quick-chat chatpage](/client/public/images/quick-chat-chatpage.png)
+![quick-chat homepage](/public/images/quick-chat-homepage.png)
+![quick-chat dashboard](/public/images/quick-chat-dashboard.png)
+![quick-chat chatpage](/public/images/quick-chat-chatpage.png)
 
 ## Tech Stack
 
