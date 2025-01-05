@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Real-Time Chat Application - Frontend
 
-## Getting Started
+This repository contains the frontend for a real-time chat application. The application provides an intuitive user interface for authentication, chat group management, and real-time messaging. Built using Next.js and TypeScript, it integrates seamlessly with the backend API.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Responsive and user-friendly design.
+- User authentication via Google using NextAuth.js.
+- Real-time chat functionality.
+- Integration with the backend API for group and message management.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Screenshots
 
-## Learn More
+![quick-chat homepage](/client/public/images/quick-chat-homepage.png)
+![quick-chat dashboard](/client/public/images/quick-chat-dashboard.png)
+![quick-chat chatpage](/client/public/images/quick-chat-chatpage.png)
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework**: Next.js
+- **Language**: TypeScript
+- **UI**: Tailwind CSS
+- **Authentication**: NextAuth.js
+- **Real-time Communication**: Socket.IO
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Ensure you have the following installed on your system:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Node.js](https://nodejs.org/) (v16 or higher)
+
+---
+
+## Local Setup
+
+Follow these steps to set up the frontend application locally:
+
+1. Clone the Repository
+	```
+	git clone <repository-url>
+	cd client
+	```
+2. Install Dependencies
+	```
+	npm install
+	```
+3. Configure Environment Variables
+	Create a `.env` file in the root directory and set the following:
+	```
+	NEXTAUTH_URL=http://localhost:3000
+	NEXTAUTH_SECRET=
+	NEXT_PUBLIC_APP_URL=http://localhost:3000
+	NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+	GOOGLE_CLIENT_ID=
+	GOOGLE_CLIENT_SECRET=
+	```
+4. Run the Development Server
+	```
+	npm run dev
+	```
+	The application will be available at http://localhost:3000.
+
+## Production URL
+
+The application is deployed at:  
+[https://quick-chat-frontend-lilac.vercel.app/](https://quick-chat-frontend-lilac.vercel.app/)
+
+----------
+
+## Development Notes
+
+-   **Port**: The frontend runs on port `3000` by default.
+-   Ensure the backend server is running at http://localhost:8000 to test API integrations.
+
+----------
+
+## Contributions
+
+Feel free to contribute by submitting issues or pull requests. Follow best practices for code quality and documentation.
